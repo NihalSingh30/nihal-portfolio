@@ -1,0 +1,13 @@
+{
+  "name": "nihal-singh-portfolio",
+  "version": "1.0.0",
+  "description": "Nihal Singh's machine learning and software portfolio.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Nihal Singh",
+  "license": "UNLICENSED",
+  "type": "commonjs"
+}
