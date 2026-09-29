@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/site.css?v=3" />
+    <link rel="stylesheet" href="styles/site.css?v=5" />
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
@@ -34,6 +34,13 @@
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a
+          href="assets/Nihal-Singh-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Nihal Singh's CV (opens in a new tab)"
+          >CV <span aria-hidden="true">↗</span></a
+        >
       </nav>
     </header>
 
@@ -80,6 +87,37 @@
             </svg>
             <span>GitHub</span>
           </a>
+          <div class="resume-actions" role="group" aria-label="CV actions">
+            <a
+              class="profile-link profile-link--secondary profile-link--resume"
+              href="assets/Nihal-Singh-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Preview Nihal Singh's CV (opens in a new tab)"
+            >
+              <svg
+                class="profile-link__icon"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 2h8l4 4v16H6V2Zm8 1.5V7h3.5M9 11h6M9 15h6M9 19h4"
+                />
+              </svg>
+              <span>View CV</span>
+            </a>
+            <a
+              class="resume-download"
+              href="assets/Nihal-Singh-Resume.pdf"
+              download="Nihal-Singh-Resume.pdf"
+              aria-label="Download Nihal Singh's CV as a PDF"
+              title="Download CV"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+              </svg>
+            </a>
+          </div>
         </div>
         <h1 id="hero-title" class="reveal">
           I build intelligent systems that turn data into

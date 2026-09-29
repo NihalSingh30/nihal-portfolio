@@ -110,6 +110,45 @@ nav a:hover { color: var(--accent); }
 }
 .profile-link--secondary:hover { border-color: var(--accent); color: var(--accent); }
 .profile-link__icon { width: 1.08rem; height: 1.08rem; flex: none; fill: currentColor; }
+.profile-link--resume .profile-link__icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.resume-actions {
+  display: inline-flex;
+  align-items: stretch;
+}
+.resume-actions .profile-link--resume {
+  border-radius: 999px 0 0 999px;
+  border-right: 0;
+}
+.resume-download {
+  display: inline-grid;
+  width: 2.55rem;
+  min-height: 2.55rem;
+  place-items: center;
+  border: 1px solid rgba(17,17,17,.35);
+  border-left-color: var(--line);
+  border-radius: 0 999px 999px 0;
+  transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+}
+.resume-download svg {
+  width: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.resume-actions:hover .profile-link--resume,
+.resume-actions:hover .resume-download {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.resume-download:hover { background: rgba(95,111,255,.08); }
 .hero h1 {
   max-width: 13ch;
   margin: clamp(2.25rem, 6vh, 5rem) 0;
@@ -209,12 +248,12 @@ footer a:hover { color: var(--accent); }
 .reveal.is-visible { opacity: 1; transform: none; }
 
 @media (max-width: 760px) {
-  .site-header { min-height: 4.6rem; }
-  nav { gap: 1rem; }
-  nav a { font-size: .7rem; }
+  .site-header { min-height: 4.6rem; padding-inline: 1rem; }
+  nav { gap: .55rem; }
+  nav a { font-size: .64rem; }
   .hero { min-height: 100svh; padding-top: 7.5rem; }
   .hero-links { margin-top: 1rem; }
-  .hero h1 { margin: clamp(2rem, 6vh, 3.5rem) 0; font-size: clamp(3.2rem, 15vw, 5.7rem); }
+  .hero h1 { margin: clamp(2rem, 6vh, 3.5rem) 0; font-size: clamp(3rem, 13vw, 5.4rem); }
   .hero-footer p { display: none; }
   .hero-footer { justify-content: flex-end; }
   .section-heading { grid-template-columns: 2.5rem 1fr; gap: 1rem; }
